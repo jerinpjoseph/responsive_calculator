@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator By JERIN</title>
+        <link href="Assets/images/calculator 16.png" rel="icon" >
+        <link href="Assets/images/calculator 32.png" rel="icon">
+        <link href="Assets/images/calculator 180.png" rel="apple-touch-icon">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            A Simple Calculator
+        </div>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <div class="display">
+                        <input type="text" name="display">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="display.value ='' " class="operator">
+                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                        <input type="button" value="." onclick="display.value +='.' " class="operator">
+                        <input type="button" value="/" onclick="display.value +='/' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value +='7' ">
+                        <input type="button" value="8" onclick="display.value +='8' ">
+                        <input type="button" value="9" onclick="display.value +='9' ">
+                        <input type="button" value="*" onclick="display.value +='*' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value +='4' ">
+                        <input type="button" value="5" onclick="display.value +='5' ">
+                        <input type="button" value="6" onclick="display.value +='6' ">
+                        <input type="button" value="-" onclick="display.value +='-' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value +='1' ">
+                        <input type="button" value="2" onclick="display.value +='2' ">
+                        <input type="button" value="3" onclick="display.value +='3' ">
+                        <input type="button" value="+" onclick="display.value +='+' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value +='00' ">
+                        <input type="button" value="0" onclick="display.value +='0' ">
+                        <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="myFooter" id="footer-wrapper">
+            <div class="footer-icons">
+                <a href="https://twitter.com/jerin_p_joseph" class="generic-anchor" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/jerinpjoseph" class="generic-anchor" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.instagram.com/jerin__p__joseph" class="generic-anchor" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jerin-p-j-3893b2266/" class="generic-anchor" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://youtube.com/@jerin_p_joseph" class="generic-anchor" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://stackoverflow.com/users/21233380/jerin-p-j?tab=profile" class="generic-anchor" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+            </div>
+            <section class="footer-bottom">
+                <div class="footer-bottom-wrapper">   
+                    <i class="fa fa-copyright" role="copyright"></i> 2023 <a href="https://jerinpjoseph.github.io/responsive-personal-website/" target="_blank"><strong>Jerin P J</strong></a> <span class="footer-bottom-rights"> - All Rights Reserved - </span>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
